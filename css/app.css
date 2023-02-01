@@ -1,10 +1,8 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-.debug{
-    border: dotted 1px orange;
-    text-align: center;
-}
-.container{
+
+main{
     background-color: #C71034;
+    height: 100vh;
 }
