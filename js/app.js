@@ -8,6 +8,8 @@ btcElement.addEventListener('click', function(){
     //nome cognome
     const nomeCognome = document.querySelector('input[type="nome"]')
     console.log(nomeCognome.value);
+    document.getElementById('nome_id').innerHTML = nomeCognome.value;
+
 
     //km precorrere
     const kmPercorrere = document.querySelector('input[type="kmPercorsi"]')
@@ -35,6 +37,7 @@ btcElement.addEventListener('click', function(){
     }
     prezzoDecimali = prezzoFinale.toFixed(2);
     console.log(prezzoDecimali);
+    document.getElementById('prezzo_id').innerHTML = prezzoDecimali;
 })
 
 
