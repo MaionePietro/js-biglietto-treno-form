@@ -1,8 +1,4 @@
 
-// // 3: Calcolare il prezzo totale dei kilometri
-
-// console.log(kmPrezzo);
-
 
 const btcElement = document.querySelector('button');
 let sconto =0, prezzoFinale, prezzoDecimali;
@@ -29,45 +25,16 @@ btcElement.addEventListener('click', function(){
         case '1':
             sconto = (totKm / 100) * 20;
             prezzoFinale = totKm - sconto;
-            prezzoDecimali = prezzoFinale.toFixed(2);
             break
         case '2':
             sconto = (totKm / 100) * 40;
             prezzoFinale = totKm - sconto;
-            prezzoDecimali = prezzoFinale.toFixed(2);
             break
         default:
-            console.log
             prezzoFinale = totKm
-            prezzoDecimali = prezzoFinale.toFixed(2);
     }
+    prezzoDecimali = prezzoFinale.toFixed(2);
+    console.log(prezzoDecimali);
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // 4: applicare sconto in base all'età 20% junior e 40% senior
-
-// let sconto =0, prezzoFinale, prezzoDecimali;
-// if(anni <= 18){
-//     sconto = (totKm / 100) * 20;
-// }else if(anni >= 65){
-//     sconto = (totKm / 100) * 40;
-// }
-// prezzoFinale = totKm - sconto;
-// prezzoDecimali = prezzoFinale.toFixed(2);
-// console.log('prezzo finale: ' + prezzoDecimali + '€');
